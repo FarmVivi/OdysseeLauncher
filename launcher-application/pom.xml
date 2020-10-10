@@ -45,26 +45,26 @@
         <dependency>
             <groupId>net.wytream</groupId>
             <artifactId>wylog</artifactId>
-            <!--suppress MavenModelInspection -->
             <version>1.0.0</version>
+            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>fr.theshark34</groupId>
             <artifactId>openlauncherlib</artifactId>
-            <!--suppress MavenModelInspection -->
             <version>1.0.0</version>
+            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>fr.theshark34</groupId>
             <artifactId>supdate</artifactId>
-            <!--suppress MavenModelInspection -->
             <version>1.0.0</version>
+            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>fr.theshark34</groupId>
             <artifactId>swinger</artifactId>
-            <!--suppress MavenModelInspection -->
             <version>1.0.0</version>
+            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>fr.odyssee</groupId>

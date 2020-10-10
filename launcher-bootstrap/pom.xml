@@ -25,6 +25,18 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>fr.odyssee.bootstrap.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
         </plugins>
         <resources>
             <resource>
@@ -45,26 +57,26 @@
         <dependency>
             <groupId>net.wytream</groupId>
             <artifactId>wylog</artifactId>
-            <!--suppress MavenModelInspection -->
             <version>1.0.0</version>
+            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>fr.theshark34</groupId>
             <artifactId>openlauncherlib</artifactId>
-            <!--suppress MavenModelInspection -->
             <version>1.0.0</version>
+            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>fr.theshark34</groupId>
             <artifactId>supdate</artifactId>
-            <!--suppress MavenModelInspection -->
             <version>1.0.0</version>
+            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>fr.theshark34</groupId>
             <artifactId>swinger</artifactId>
-            <!--suppress MavenModelInspection -->
             <version>1.0.0</version>
+            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>fr.odyssee</groupId>
