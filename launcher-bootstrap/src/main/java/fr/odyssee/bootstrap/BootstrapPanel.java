@@ -19,10 +19,10 @@ public class BootstrapPanel extends JPanel implements SwingerEventListener {
 
     public BootstrapPanel(BootstrapFrame tempmain) {
         this.setLayout(null);
-        URL loading_2_red_url = tempmain.getClass().getResource("resources/loading_slow.gif");
+        URL loading_2_red_url = tempmain.getClass().getResource("/loading_slow.gif");
         loading_2_red = new ImageIcon(loading_2_red_url);
 
-        URL loading_2_red_fast_url = tempmain.getClass().getResource("resources/loading_fast.gif");
+        URL loading_2_red_fast_url = tempmain.getClass().getResource("/loading_fast.gif");
         loading_2_red_fast = new ImageIcon(loading_2_red_fast_url);
 
         loading = new JLabel(loading_2_red);
@@ -43,7 +43,7 @@ public class BootstrapPanel extends JPanel implements SwingerEventListener {
             this.add(infodev);
         }
 
-        URL logoPath = tempmain.getClass().getResource("resources/Splash.png");
+        URL logoPath = tempmain.getClass().getResource("/Splash.png");
         JLabel logo = new JLabel("", new ImageIcon(logoPath), JLabel.CENTER);
         logo.setBounds(BootstrapFrame.interval, BootstrapFrame.interval, getResource("Splash.png").getWidth(), getResource("Splash.png").getHeight());
         this.add(logo);

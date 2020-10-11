@@ -30,7 +30,7 @@ public class Main {
     public static final String version = "1.0.0.0";
     public static final boolean dev = true;
     public static final String name = "Odyssee";
-    public static final String version_check_url = "https://raw.githubusercontent.com/OdysseeMC/Launcher/master/manifest/v1/";
+    public static final String version_check_url = "http://manifest.odyssee.avadia.fr/v1/";
     public static final String server_url = "http://odyssee.avadia.fr/";
 
     public static final BasicLogger logger = LoggerFactory.getLogger(name + " | Bootstrap");
@@ -69,13 +69,14 @@ public class Main {
         logger.info("System.getProperty('java.version') == '" + System.getProperty("java.version") + "'");
         logger.info("System.getProperty('java.vendor') == '" + System.getProperty("java.vendor") + "'");
         logger.info("System.getProperty('sun.arch.data.model') == '" + System.getProperty("sun.arch.data.model") + "'");
-
+        logger.info("System.getProperty('http.agent') == '" + System.getProperty("http.agent") + "'");
+        System.setProperty("http.agent", "Chrome");
 
         LanguageManager.setLang(LanguageManager.FRENCH);
 
         Swinger.setSystemLookNFeel();
 
-        setResourcePath("/fr/odyssee/bootstrap/resources");
+        setResourcePath("/");
 
         logger.info("Setup de l'instance...");
         BootstrapFrame.setInstance(new BootstrapFrame(args));

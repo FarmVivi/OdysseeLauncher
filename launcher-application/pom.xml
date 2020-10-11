@@ -47,30 +47,34 @@
             <artifactId>wylog</artifactId>
             <version>1.0.0</version>
             <type>jar</type>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>fr.theshark34</groupId>
             <artifactId>openlauncherlib</artifactId>
             <version>1.0.0</version>
             <type>jar</type>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>fr.theshark34</groupId>
             <artifactId>supdate</artifactId>
             <version>1.0.0</version>
             <type>jar</type>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>fr.theshark34</groupId>
             <artifactId>swinger</artifactId>
             <version>1.0.0</version>
             <type>jar</type>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>fr.odyssee</groupId>
             <artifactId>launcher-common</artifactId>
             <version>1.0.0.0-SNAPSHOT</version>
-            <scope>compile</scope>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
