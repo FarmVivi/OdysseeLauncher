@@ -57,7 +57,7 @@ public class SettingsPanel extends JPanel implements SwingerEventListener {
         cancelLabel.setFont(new Font("Arial Black", Font.PLAIN, 25));
         cancelButton.add(cancelLabel);
 
-        deleteDir.setBounds(70, 265, 150, 25);
+        deleteDir.setBounds(70, 265, 175, 25);
         deleteDir.addEventListener(this);
         this.add(deleteDir);
 
