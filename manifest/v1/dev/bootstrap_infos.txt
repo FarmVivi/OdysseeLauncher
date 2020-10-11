@@ -1,8 +1,8 @@
 latest_version: 1.0.0.0
 download_link:
-updater_link:
+updater_link: http://odyssee.avadia.fr/
 launcher_main_class: fr.odyssee.application.Main
 restricted: false
 restricted_msg:
-info: false
-info_msg:
+info: true
+info_msg: Pour toute modification, contactez FarmVivi#5934 sur Discord
