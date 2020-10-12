@@ -19,10 +19,10 @@ import java.awt.image.BufferedImage;
 
 public enum LauncherServers {
     DEFAULT(LauncherGames.UNKNOWN, "Inconnu", "unknown", null, null),
-    MINECRAFT_ODYSSEE(LauncherGames.MINECRAFT, "Odyssée | Faction", "odyssee", () -> {
-        GameLauncher gameLauncher = LauncherFrame.getInstance().getGames().get(LauncherGames.MINECRAFT).getServers().get(LauncherServers.valueOf("MINECRAFT_ODYSSEE")).getGameLauncher();
-        LauncherFrame.getInstance().getGames().get(LauncherGames.MINECRAFT).getServers().get(LauncherServers.valueOf("MINECRAFT_ODYSSEE")).getPlayButton().setEnabled(false);
-        LauncherFrame.getInstance().getLoginFrame().display(Main.name + " - Pseudonyme", defaultLoginLostener(gameLauncher, LauncherServers.valueOf("MINECRAFT_ODYSSEE")), SettingsManager.getSaver(), "Choisissez un pseudonyme", false);
+    MINECRAFT_FACTION(LauncherGames.MINECRAFT, "Odyssée | Faction", "faction", () -> {
+        GameLauncher gameLauncher = LauncherFrame.getInstance().getGames().get(LauncherGames.MINECRAFT).getServers().get(LauncherServers.valueOf("MINECRAFT_FACTION")).getGameLauncher();
+        LauncherFrame.getInstance().getGames().get(LauncherGames.MINECRAFT).getServers().get(LauncherServers.valueOf("MINECRAFT_FACTION")).getPlayButton().setEnabled(false);
+        LauncherFrame.getInstance().getLoginFrame().display(Main.name + " - Pseudonyme", defaultLoginLostener(gameLauncher, LauncherServers.valueOf("MINECRAFT_FACTION")), SettingsManager.getSaver(), "Choisissez un pseudonyme", false);
     }, new LauncherMinecraftData(new GameVersion("1.7.10", GameType.V1_7_10), GameTweak.FORGE)),
     TEST_MINECRAFT(LauncherGames.MINECRAFT, "Odyssée | TEST", "test", () -> {
         JOptionPane.showMessageDialog(LauncherFrame.getInstance(), "Indisponible pour le moment...", Main.name + " | Launcher", JOptionPane.INFORMATION_MESSAGE);
