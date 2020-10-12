@@ -67,7 +67,7 @@ public class LauncherServer {
         serverInfos.add(newsSeparator);
 
         new Thread(() -> {
-            NewsComponent news1 = new NewsComponent(null, "Nouveau launcher !", null, "FarmVivi", "    À l'occasion de la sortis des nouveaux serveurs de Otago, le launcher est ici !");
+            NewsComponent news1 = new NewsComponent(null, "Launcher en développement...", null, "FarmVivi", "Pour toute suggestion, veuillez contacter FarmVivi#5934 sur discord !");
             news1.setBounds(affiche.getX() + affiche.getWidth() + 25 + 10, 340, 1280 - 75 - affiche.getX() - affiche.getWidth() - 25 - 20, 100);
             serverInfos.add(news1);
         }).start();
