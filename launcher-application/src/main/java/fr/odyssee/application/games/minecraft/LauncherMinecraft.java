@@ -34,7 +34,7 @@ import java.util.concurrent.TimeUnit;
 public class LauncherMinecraft extends GameLauncher {
     //TODO Faire que lon ne doit pas a chaque fois retélécharger les assets ect...
 
-    private static final String base_url = "http://odyssee.avadia.fr/launcher/games/";
+    private static final String base_url = "https://odyssee.avadia.fr/launcher/games/";
 
     private final LauncherServers SERVER;
     private final GameInfos INFOS;

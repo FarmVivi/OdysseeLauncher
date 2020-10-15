@@ -7,8 +7,8 @@ import javax.swing.*;
 import java.awt.image.BufferedImage;
 
 public enum LauncherGames {
-    UNKNOWN("Inconnu", "http://odyssee.avadia.fr", "unknown"),
-    MINECRAFT("Minecraft", "http://odyssee.avadia.fr/minecraft", "minecraft");
+    UNKNOWN("Inconnu", "https://odyssee.avadia.fr", "unknown"),
+    MINECRAFT("Minecraft", "https://odyssee.avadia.fr/minecraft", "minecraft");
 
     private final String name;
     private final String site;
