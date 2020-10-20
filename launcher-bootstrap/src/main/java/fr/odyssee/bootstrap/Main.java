@@ -30,8 +30,8 @@ public class Main {
     public static final String version = "1.0.0.0";
     public static final boolean dev = true;
     public static final String name = "Odyssee";
-    public static final String version_check_url = "http://manifest.odyssee.avadia.fr/v1/";
-    public static final String server_url = "http://odyssee.avadia.fr/";
+    public static final String version_check_url = "https://manifest-odyssee.avadia.fr/v1/";
+    public static final String server_url = "https://odyssee.avadia.fr/";
 
     public static final BasicLogger logger = LoggerFactory.getLogger(name + " | Bootstrap");
 
